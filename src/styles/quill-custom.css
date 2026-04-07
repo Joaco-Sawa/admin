@@ -1,0 +1,91 @@
+/* Estilos personalizados para ReactQuill */
+
+/* Contenedor del editor */
+.quill {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+/* Toolbar */
+.ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 12px;
+}
+
+/* Editor area */
+.ql-container.ql-snow {
+  border: none;
+  font-size: 16px;
+  min-height: 400px;
+}
+
+/* Editor content */
+.ql-editor {
+  min-height: 400px;
+  padding: 16px;
+}
+
+/* Placeholder */
+.ql-editor.ql-blank::before {
+  color: #9ca3af;
+  font-style: normal;
+}
+
+/* Toolbar buttons */
+.ql-toolbar button {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ql-toolbar button:hover {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.ql-toolbar button.ql-active {
+  background-color: #dbeafe;
+  border-radius: 4px;
+}
+
+/* Font size selector */
+.ql-toolbar .ql-size {
+  width: 80px;
+}
+
+/* Remove default focus outline and add custom */
+.ql-toolbar button:focus,
+.ql-toolbar .ql-picker:focus {
+  outline: none;
+}
+
+/* Spacing between toolbar groups */
+.ql-toolbar .ql-formats {
+  margin-right: 12px;
+}
+
+/* Custom picker */
+.ql-snow .ql-picker {
+  color: #374151;
+}
+
+.ql-snow .ql-picker-label:hover {
+  color: #111827;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.ql-snow .ql-picker-item:hover {
+  background-color: #f3f4f6;
+}

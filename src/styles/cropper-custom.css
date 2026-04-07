@@ -1,0 +1,16 @@
+/* Custom styles for react-easy-crop to avoid dark overlay */
+
+/* Override the dark overlay with a lighter one */
+.reactEasyCrop_Container {
+  background-color: #ffffff !important;
+}
+
+/* Make the crop area overlay lighter */
+.reactEasyCrop_CropArea {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Ensure the image container has white background */
+.reactEasyCrop_Image {
+  background-color: #ffffff !important;
+}
